@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/keyaki/proprietary/lib/vendor.somc.hardware.camera.cacao@2.0.so:system/lib/vendor.somc.hardware.camera.cacao@2.0.so \
     vendor/sony/keyaki/proprietary/lib/vendor.somc.hardware.camera.provider@1.0.so:system/lib/vendor.somc.hardware.camera.provider@1.0.so \
     vendor/sony/keyaki/proprietary/lib64/hw/fingerprint.msm8996.so:system/lib64/hw/fingerprint.msm8996.so \
+    vendor/sony/keyaki/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
     vendor/sony/keyaki/proprietary/lib64/libcacao_client.so:system/lib64/libcacao_client.so \
     vendor/sony/keyaki/proprietary/lib64/libcacao_pal.so:system/lib64/libcacao_pal.so \
     vendor/sony/keyaki/proprietary/lib64/libcom_fingerprints_service.so:system/lib64/libcom_fingerprints_service.so \
@@ -243,6 +244,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/keyaki/proprietary/vendor/lib/camera/libexcal_snapshot_ctrl_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/libexcal_snapshot_ctrl_plugin.so \
     vendor/sony/keyaki/proprietary/vendor/lib/camera/libexcal_splitter_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/libexcal_splitter_plugin.so \
     vendor/sony/keyaki/proprietary/vendor/lib/camera/libexcal_stream_ctrl_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/libexcal_stream_ctrl_plugin.so \
+    vendor/sony/keyaki/proprietary/vendor/lib/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.qcom.so \
     vendor/sony/keyaki/proprietary/vendor/lib/libactuator_ad5816g.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ad5816g.so \
     vendor/sony/keyaki/proprietary/vendor/lib/libactuator_ad5823.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ad5823.so \
     vendor/sony/keyaki/proprietary/vendor/lib/libactuator_ak7345.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ak7345.so \
