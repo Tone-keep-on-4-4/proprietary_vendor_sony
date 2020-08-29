@@ -40,7 +40,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/kagura/proprietary/lib/vendor.somc.hardware.camera.cacao@2.0.so:system/lib/vendor.somc.hardware.camera.cacao@2.0.so \
     vendor/sony/kagura/proprietary/lib/vendor.somc.hardware.camera.provider@1.0.so:system/lib/vendor.somc.hardware.camera.provider@1.0.so \
     vendor/sony/kagura/proprietary/lib64/hw/fingerprint.msm8996.so:system/lib64/hw/fingerprint.msm8996.so \
-    vendor/sony/kagura/proprietary/vendor/firmware/libpn547_fw.so:$(TARGET_COPY_OUT_VENDOR)/firmware/libpn547_fw.so \
+    vendor/sony/kagura/proprietary/vendor/lib/libpn547_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpn547_fw.so \
     vendor/sony/kagura/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
     vendor/sony/kagura/proprietary/lib64/libcacao_client.so:system/lib64/libcacao_client.so \
     vendor/sony/kagura/proprietary/lib64/libcacao_pal.so:system/lib64/libcacao_pal.so \
