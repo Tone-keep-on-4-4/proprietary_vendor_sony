@@ -17,76 +17,76 @@
 PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/sony/tone-common/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
-    vendor/sony/tone-common/proprietary/etc/firmware/cmnlib.b00:system/etc/firmware/cmnlib.b00 \
-    vendor/sony/tone-common/proprietary/etc/firmware/cmnlib.b01:system/etc/firmware/cmnlib.b01 \
-    vendor/sony/tone-common/proprietary/etc/firmware/cmnlib.b02:system/etc/firmware/cmnlib.b02 \
-    vendor/sony/tone-common/proprietary/etc/firmware/cmnlib.b03:system/etc/firmware/cmnlib.b03 \
-    vendor/sony/tone-common/proprietary/etc/firmware/cmnlib.b04:system/etc/firmware/cmnlib.b04 \
-    vendor/sony/tone-common/proprietary/etc/firmware/cmnlib.b05:system/etc/firmware/cmnlib.b05 \
-    vendor/sony/tone-common/proprietary/etc/firmware/cmnlib.mdt:system/etc/firmware/cmnlib.mdt \
-    vendor/sony/tone-common/proprietary/etc/firmware/cmnlib64.b00:system/etc/firmware/cmnlib64.b00 \
-    vendor/sony/tone-common/proprietary/etc/firmware/cmnlib64.b01:system/etc/firmware/cmnlib64.b01 \
-    vendor/sony/tone-common/proprietary/etc/firmware/cmnlib64.b02:system/etc/firmware/cmnlib64.b02 \
-    vendor/sony/tone-common/proprietary/etc/firmware/cmnlib64.b03:system/etc/firmware/cmnlib64.b03 \
-    vendor/sony/tone-common/proprietary/etc/firmware/cmnlib64.b04:system/etc/firmware/cmnlib64.b04 \
-    vendor/sony/tone-common/proprietary/etc/firmware/cmnlib64.b05:system/etc/firmware/cmnlib64.b05 \
-    vendor/sony/tone-common/proprietary/etc/firmware/cmnlib64.mdt:system/etc/firmware/cmnlib64.mdt \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzattest.b00:system/etc/firmware/tzattest.b00 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzattest.b01:system/etc/firmware/tzattest.b01 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzattest.b02:system/etc/firmware/tzattest.b02 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzattest.b03:system/etc/firmware/tzattest.b03 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzattest.b04:system/etc/firmware/tzattest.b04 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzattest.b05:system/etc/firmware/tzattest.b05 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzattest.b06:system/etc/firmware/tzattest.b06 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzattest.mdt:system/etc/firmware/tzattest.mdt \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzhdcp.b00:system/etc/firmware/tzhdcp.b00 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzhdcp.b01:system/etc/firmware/tzhdcp.b01 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzhdcp.b02:system/etc/firmware/tzhdcp.b02 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzhdcp.b03:system/etc/firmware/tzhdcp.b03 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzhdcp.b04:system/etc/firmware/tzhdcp.b04 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzhdcp.b05:system/etc/firmware/tzhdcp.b05 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzhdcp.b06:system/etc/firmware/tzhdcp.b06 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzhdcp.mdt:system/etc/firmware/tzhdcp.mdt \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzlibasb.b00:system/etc/firmware/tzlibasb.b00 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzlibasb.b01:system/etc/firmware/tzlibasb.b01 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzlibasb.b02:system/etc/firmware/tzlibasb.b02 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzlibasb.b03:system/etc/firmware/tzlibasb.b03 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzlibasb.b04:system/etc/firmware/tzlibasb.b04 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzlibasb.b05:system/etc/firmware/tzlibasb.b05 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzlibasb.b06:system/etc/firmware/tzlibasb.b06 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzlibasb.mdt:system/etc/firmware/tzlibasb.mdt \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzsuntory.b00:system/etc/firmware/tzsuntory.b00 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzsuntory.b01:system/etc/firmware/tzsuntory.b01 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzsuntory.b02:system/etc/firmware/tzsuntory.b02 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzsuntory.b03:system/etc/firmware/tzsuntory.b03 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzsuntory.b04:system/etc/firmware/tzsuntory.b04 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzsuntory.b05:system/etc/firmware/tzsuntory.b05 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzsuntory.b06:system/etc/firmware/tzsuntory.b06 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzsuntory.mdt:system/etc/firmware/tzsuntory.mdt \
-    vendor/sony/tone-common/proprietary/etc/firmware/tztpm.b00:system/etc/firmware/tztpm.b00 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tztpm.b01:system/etc/firmware/tztpm.b01 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tztpm.b02:system/etc/firmware/tztpm.b02 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tztpm.b03:system/etc/firmware/tztpm.b03 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tztpm.b04:system/etc/firmware/tztpm.b04 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tztpm.b05:system/etc/firmware/tztpm.b05 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tztpm.b06:system/etc/firmware/tztpm.b06 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tztpm.mdt:system/etc/firmware/tztpm.mdt \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzwidevine.b00:system/etc/firmware/tzwidevine.b00 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzwidevine.b01:system/etc/firmware/tzwidevine.b01 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzwidevine.b02:system/etc/firmware/tzwidevine.b02 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzwidevine.b03:system/etc/firmware/tzwidevine.b03 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzwidevine.b04:system/etc/firmware/tzwidevine.b04 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzwidevine.b05:system/etc/firmware/tzwidevine.b05 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzwidevine.b06:system/etc/firmware/tzwidevine.b06 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzwidevine.mdt:system/etc/firmware/tzwidevine.mdt \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzwvcpybuf.b00:system/etc/firmware/tzwvcpybuf.b00 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzwvcpybuf.b01:system/etc/firmware/tzwvcpybuf.b01 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzwvcpybuf.b02:system/etc/firmware/tzwvcpybuf.b02 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzwvcpybuf.b03:system/etc/firmware/tzwvcpybuf.b03 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzwvcpybuf.b04:system/etc/firmware/tzwvcpybuf.b04 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzwvcpybuf.b05:system/etc/firmware/tzwvcpybuf.b05 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzwvcpybuf.b06:system/etc/firmware/tzwvcpybuf.b06 \
-    vendor/sony/tone-common/proprietary/etc/firmware/tzwvcpybuf.mdt:system/etc/firmware/tzwvcpybuf.mdt \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/cmnlib.b00:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/cmnlib.b00 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/cmnlib.b01:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/cmnlib.b01 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/cmnlib.b02:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/cmnlib.b02 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/cmnlib.b03:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/cmnlib.b03 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/cmnlib.b04:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/cmnlib.b04 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/cmnlib.b05:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/cmnlib.b05 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/cmnlib.mdt:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/cmnlib.mdt \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/cmnlib64.b00:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/cmnlib64.b00 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/cmnlib64.b01:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/cmnlib64.b01 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/cmnlib64.b02:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/cmnlib64.b02 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/cmnlib64.b03:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/cmnlib64.b03 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/cmnlib64.b04:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/cmnlib64.b04 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/cmnlib64.b05:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/cmnlib64.b05 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/cmnlib64.mdt:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/cmnlib64.mdt \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzattest.b00:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzattest.b00 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzattest.b01:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzattest.b01 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzattest.b02:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzattest.b02 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzattest.b03:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzattest.b03 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzattest.b04:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzattest.b04 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzattest.b05:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzattest.b05 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzattest.b06:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzattest.b06 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzattest.mdt:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzattest.mdt \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzhdcp.b00:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzhdcp.b00 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzhdcp.b01:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzhdcp.b01 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzhdcp.b02:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzhdcp.b02 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzhdcp.b03:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzhdcp.b03 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzhdcp.b04:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzhdcp.b04 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzhdcp.b05:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzhdcp.b05 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzhdcp.b06:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzhdcp.b06 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzhdcp.mdt:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzhdcp.mdt \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzlibasb.b00:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzlibasb.b00 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzlibasb.b01:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzlibasb.b01 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzlibasb.b02:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzlibasb.b02 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzlibasb.b03:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzlibasb.b03 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzlibasb.b04:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzlibasb.b04 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzlibasb.b05:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzlibasb.b05 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzlibasb.b06:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzlibasb.b06 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzlibasb.mdt:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzlibasb.mdt \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzsuntory.b00:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzsuntory.b00 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzsuntory.b01:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzsuntory.b01 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzsuntory.b02:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzsuntory.b02 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzsuntory.b03:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzsuntory.b03 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzsuntory.b04:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzsuntory.b04 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzsuntory.b05:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzsuntory.b05 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzsuntory.b06:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzsuntory.b06 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzsuntory.mdt:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzsuntory.mdt \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tztpm.b00:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tztpm.b00 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tztpm.b01:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tztpm.b01 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tztpm.b02:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tztpm.b02 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tztpm.b03:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tztpm.b03 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tztpm.b04:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tztpm.b04 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tztpm.b05:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tztpm.b05 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tztpm.b06:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tztpm.b06 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tztpm.mdt:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tztpm.mdt \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzwidevine.b00:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzwidevine.b00 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzwidevine.b01:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzwidevine.b01 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzwidevine.b02:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzwidevine.b02 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzwidevine.b03:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzwidevine.b03 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzwidevine.b04:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzwidevine.b04 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzwidevine.b05:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzwidevine.b05 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzwidevine.b06:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzwidevine.b06 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzwidevine.mdt:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzwidevine.mdt \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzwvcpybuf.b00:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzwvcpybuf.b00 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzwvcpybuf.b01:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzwvcpybuf.b01 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzwvcpybuf.b02:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzwvcpybuf.b02 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzwvcpybuf.b03:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzwvcpybuf.b03 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzwvcpybuf.b04:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzwvcpybuf.b04 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzwvcpybuf.b05:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzwvcpybuf.b05 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzwvcpybuf.b06:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzwvcpybuf.b06 \
+    vendor/sony/tone-common/proprietary/vendor/etc/firmware/tzwvcpybuf.mdt:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzwvcpybuf.mdt \
     vendor/sony/tone-common/proprietary/vendor/etc/firmware/wlan/bcmdhd/bcmdhd.cal:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/wlan/bcmdhd/bcmdhd.cal \
     vendor/sony/tone-common/proprietary/vendor/etc/firmware/wlan/bcmdhd/bcmdhd.cal_b1:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/wlan/bcmdhd/bcmdhd.cal_b1 \
     vendor/sony/tone-common/proprietary/vendor/etc/firmware/wlan/bcmdhd/fw_bcmdhd.bin:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/wlan/bcmdhd/fw_bcmdhd.bin \
@@ -130,27 +130,27 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar:system/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar \
     vendor/sony/tone-common/proprietary/framework/vendor.qti.latency-V2.0-java.jar:system/framework/vendor.qti.latency-V2.0-java.jar \
     vendor/sony/tone-common/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
-    vendor/sony/tone-common/proprietary/lib/libGPTEE_system.so:system/lib/libGPTEE_system.so \
-    vendor/sony/tone-common/proprietary/lib/libMiscTAApi.so:system/lib/libMiscTAApi.so \
-    vendor/sony/tone-common/proprietary/lib/libMiscTaWrapper.so:system/lib/libMiscTaWrapper.so \
-    vendor/sony/tone-common/proprietary/lib/libQTEEConnector_system.so:system/lib/libQTEEConnector_system.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/libGPTEE_system.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPTEE_system.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/libMiscTAApi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMiscTAApi.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/libMiscTaWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMiscTaWrapper.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/libQTEEConnector_system.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQTEEConnector_system.so \
     vendor/sony/tone-common/proprietary/lib/libaptXHD_encoder.so:system/lib/libaptXHD_encoder.so \
     vendor/sony/tone-common/proprietary/lib/libaptX_encoder.so:system/lib/libaptX_encoder.so \
     vendor/sony/tone-common/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
-    vendor/sony/tone-common/proprietary/lib/libidd-plat.so:system/lib/libidd-plat.so \
-    vendor/sony/tone-common/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/libidd-plat.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidd-plat.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/libqmi_cci_system.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_cci_system.so \
     vendor/sony/tone-common/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
     vendor/sony/tone-common/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
-    vendor/sony/tone-common/proprietary/lib/libsensor1.so:system/lib/libsensor1.so \
-    vendor/sony/tone-common/proprietary/lib/libsensor_reg.so:system/lib/libsensor_reg.so \
-    vendor/sony/tone-common/proprietary/lib/sensors.finger-pickup.so:system/lib/sensors.finger-pickup.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor1.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor_reg.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/sensors.finger-pickup.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.finger-pickup.so \
     vendor/sony/tone-common/proprietary/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
     vendor/sony/tone-common/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
     vendor/sony/tone-common/proprietary/lib/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
-    vendor/sony/tone-common/proprietary/lib/vendor.qti.hardware.qteeconnector@1.0.so:system/lib/vendor.qti.hardware.qteeconnector@1.0.so \
-    vendor/sony/tone-common/proprietary/lib/vendor.semc.hardware.drm@1.0.so:system/lib/vendor.semc.hardware.drm@1.0.so \
-    vendor/sony/tone-common/proprietary/lib/vendor.semc.system.idd@1.0.so:system/lib/vendor.semc.system.idd@1.0.so \
-    vendor/sony/tone-common/proprietary/lib/vendor.somc.hardware.miscta@1.0.so:system/lib/vendor.somc.hardware.miscta@1.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qteeconnector@1.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/vendor.semc.hardware.drm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.semc.hardware.drm@1.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/vendor.semc.system.idd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.semc.system.idd@1.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/vendor.somc.hardware.miscta@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.somc.hardware.miscta@1.0.so \
     vendor/sony/tone-common/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/sony/tone-common/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/sony/tone-common/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/lib64/com.qualcomm.qti.imscmservice@1.0.so \
@@ -159,29 +159,29 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
     vendor/sony/tone-common/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
     vendor/sony/tone-common/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
-    vendor/sony/tone-common/proprietary/lib64/libGPTEE_system.so:system/lib64/libGPTEE_system.so \
-    vendor/sony/tone-common/proprietary/lib64/libMiscTAApi.so:system/lib64/libMiscTAApi.so \
-    vendor/sony/tone-common/proprietary/lib64/libMiscTaWrapper.so:system/lib64/libMiscTaWrapper.so \
-    vendor/sony/tone-common/proprietary/lib64/libQTEEConnector_system.so:system/lib64/libQTEEConnector_system.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/libGPTEE_system.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPTEE_system.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/libMiscTAApi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMiscTAApi.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/libMiscTaWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMiscTaWrapper.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/libQTEEConnector_system.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_system.so \
     vendor/sony/tone-common/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
     vendor/sony/tone-common/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
-    vendor/sony/tone-common/proprietary/lib64/libdevice_security_client.so:system/lib64/libdevice_security_client.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/libdevice_security_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdevice_security_client.so \
     vendor/sony/tone-common/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
     vendor/sony/tone-common/proprietary/lib64/libdpmctmgr.so:system/lib64/libdpmctmgr.so \
     vendor/sony/tone-common/proprietary/lib64/libdpmfdmgr.so:system/lib64/libdpmfdmgr.so \
     vendor/sony/tone-common/proprietary/lib64/libdpmframework.so:system/lib64/libdpmframework.so \
     vendor/sony/tone-common/proprietary/lib64/libdpmtcm.so:system/lib64/libdpmtcm.so \
-    vendor/sony/tone-common/proprietary/lib64/libidd-plat.so:system/lib64/libidd-plat.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/libidd-plat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidd-plat.so \
     vendor/sony/tone-common/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/sony/tone-common/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
-    vendor/sony/tone-common/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/libqmi_cci_system.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_cci_system.so \
     vendor/sony/tone-common/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/sony/tone-common/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
     vendor/sony/tone-common/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
-    vendor/sony/tone-common/proprietary/lib64/libsensor1.so:system/lib64/libsensor1.so \
-    vendor/sony/tone-common/proprietary/lib64/libsensor_reg.so:system/lib64/libsensor_reg.so \
-    vendor/sony/tone-common/proprietary/lib64/libtpm.so:system/lib64/libtpm.so \
-    vendor/sony/tone-common/proprietary/lib64/sensors.finger-pickup.so:system/lib64/sensors.finger-pickup.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor1.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_reg.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/libtpm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtpm.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/sensors.finger-pickup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.finger-pickup.so \
     vendor/sony/tone-common/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
     vendor/sony/tone-common/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
     vendor/sony/tone-common/proprietary/lib64/vendor.qti.gnss@1.0.so:system/lib64/vendor.qti.gnss@1.0.so \
@@ -190,12 +190,12 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/lib64/vendor.qti.gnss@2.0.so:system/lib64/vendor.qti.gnss@2.0.so \
     vendor/sony/tone-common/proprietary/lib64/vendor.qti.gnss@2.1.so:system/lib64/vendor.qti.gnss@2.1.so \
     vendor/sony/tone-common/proprietary/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
-    vendor/sony/tone-common/proprietary/lib64/vendor.qti.hardware.qteeconnector@1.0.so:system/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/sony/tone-common/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
-    vendor/sony/tone-common/proprietary/lib64/vendor.semc.hardware.drm@1.0.so:system/lib64/vendor.semc.hardware.drm@1.0.so \
-    vendor/sony/tone-common/proprietary/lib64/vendor.semc.hardware.secd@1.0.so:system/lib64/vendor.semc.hardware.secd@1.0.so \
-    vendor/sony/tone-common/proprietary/lib64/vendor.semc.system.idd@1.0.so:system/lib64/vendor.semc.system.idd@1.0.so \
-    vendor/sony/tone-common/proprietary/lib64/vendor.somc.hardware.miscta@1.0.so:system/lib64/vendor.somc.hardware.miscta@1.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/vendor.semc.hardware.drm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.semc.hardware.drm@1.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/vendor.semc.hardware.secd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.semc.hardware.secd@1.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/vendor.semc.system.idd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.semc.system.idd@1.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/vendor.somc.hardware.miscta@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.somc.hardware.miscta@1.0.so \
     vendor/sony/tone-common/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/sony/tone-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/sony/tone-common/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
