@@ -17,42 +17,42 @@
 PRODUCT_COPY_FILES += \
     vendor/sony/kagura/proprietary/vendor/firmware/BCM4349B1.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/BCM4349B1.hcd \
     vendor/sony/kagura/proprietary/vendor/firmware/BCM4359C0.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/BCM4359C0.hcd \
-    vendor/sony/kagura/proprietary/etc/firmware/touch_module_id_0xb0.img:system/etc/firmware/touch_module_id_0xb0.img \
-    vendor/sony/kagura/proprietary/etc/firmware/touch_module_id_0xb1.img:system/etc/firmware/touch_module_id_0xb1.img \
-    vendor/sony/kagura/proprietary/etc/firmware/touch_module_id_0xb2.img:system/etc/firmware/touch_module_id_0xb2.img \
-    vendor/sony/kagura/proprietary/etc/firmware/tzfingerprint.b00:system/etc/firmware/tzfingerprint.b00 \
-    vendor/sony/kagura/proprietary/etc/firmware/tzfingerprint.b01:system/etc/firmware/tzfingerprint.b01 \
-    vendor/sony/kagura/proprietary/etc/firmware/tzfingerprint.b02:system/etc/firmware/tzfingerprint.b02 \
-    vendor/sony/kagura/proprietary/etc/firmware/tzfingerprint.b03:system/etc/firmware/tzfingerprint.b03 \
-    vendor/sony/kagura/proprietary/etc/firmware/tzfingerprint.b04:system/etc/firmware/tzfingerprint.b04 \
-    vendor/sony/kagura/proprietary/etc/firmware/tzfingerprint.b05:system/etc/firmware/tzfingerprint.b05 \
-    vendor/sony/kagura/proprietary/etc/firmware/tzfingerprint.b06:system/etc/firmware/tzfingerprint.b06 \
-    vendor/sony/kagura/proprietary/etc/firmware/tzfingerprint.mdt:system/etc/firmware/tzfingerprint.mdt \
-    vendor/sony/kagura/proprietary/etc/flashled_calc_parameters.cfg:system/etc/flashled_calc_parameters.cfg \
-    vendor/sony/kagura/proprietary/lib/hw/fingerprint.msm8996.so:system/lib/hw/fingerprint.msm8996.so \
-    vendor/sony/kagura/proprietary/lib/lib_fpc_tac_shared.so:system/lib/lib_fpc_tac_shared.so \
-    vendor/sony/kagura/proprietary/lib/libcacao_client.so:system/lib/libcacao_client.so \
-    vendor/sony/kagura/proprietary/lib/libcacao_pal.so:system/lib/libcacao_pal.so \
-    vendor/sony/kagura/proprietary/lib/libcacao_process_ctrl_gateway.so:system/lib/libcacao_process_ctrl_gateway.so \
-    vendor/sony/kagura/proprietary/lib/libcacao_service.so:system/lib/libcacao_service.so \
-    vendor/sony/kagura/proprietary/lib/libcamera_clientsemc.so:system/lib/libcamera_clientsemc.so \
-    vendor/sony/kagura/proprietary/lib/libcom_fingerprints_service.so:system/lib/libcom_fingerprints_service.so \
-    vendor/sony/kagura/proprietary/lib/libexcal_legacy.so:system/lib/libexcal_legacy.so \
-    vendor/sony/kagura/proprietary/lib/libfpc_oem.so:system/lib/libfpc_oem.so \
-    vendor/sony/kagura/proprietary/lib/libtrueportrait.so:system/lib/libtrueportrait.so \
-    vendor/sony/kagura/proprietary/lib/vendor.somc.hardware.camera.cacao@2.0.so:system/lib/vendor.somc.hardware.camera.cacao@2.0.so \
-    vendor/sony/kagura/proprietary/lib/vendor.somc.hardware.camera.provider@1.0.so:system/lib/vendor.somc.hardware.camera.provider@1.0.so \
-    vendor/sony/kagura/proprietary/lib64/hw/fingerprint.msm8996.so:system/lib64/hw/fingerprint.msm8996.so \
+    vendor/sony/kagura/proprietary/vendor/etc/firmware/touch_module_id_0xb0.img:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/touch_module_id_0xb0.img \
+    vendor/sony/kagura/proprietary/vendor/etc/firmware/touch_module_id_0xb1.img:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/touch_module_id_0xb1.img \
+    vendor/sony/kagura/proprietary/vendor/etc/firmware/touch_module_id_0xb2.img:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/touch_module_id_0xb2.img \
+    vendor/sony/kagura/proprietary/vendor/etc/firmware/tzfingerprint.b00:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzfingerprint.b00 \
+    vendor/sony/kagura/proprietary/vendor/etc/firmware/tzfingerprint.b01:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzfingerprint.b01 \
+    vendor/sony/kagura/proprietary/vendor/etc/firmware/tzfingerprint.b02:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzfingerprint.b02 \
+    vendor/sony/kagura/proprietary/vendor/etc/firmware/tzfingerprint.b03:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzfingerprint.b03 \
+    vendor/sony/kagura/proprietary/vendor/etc/firmware/tzfingerprint.b04:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzfingerprint.b04 \
+    vendor/sony/kagura/proprietary/vendor/etc/firmware/tzfingerprint.b05:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzfingerprint.b05 \
+    vendor/sony/kagura/proprietary/vendor/etc/firmware/tzfingerprint.b06:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzfingerprint.b06 \
+    vendor/sony/kagura/proprietary/vendor/etc/firmware/tzfingerprint.mdt:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzfingerprint.mdt \
+    vendor/sony/kagura/proprietary/vendor/etc/flashled_calc_parameters.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/flashled_calc_parameters.cfg \
+    vendor/sony/kagura/proprietary/vendor/lib/hw/fingerprint.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.msm8996.so \
+    vendor/sony/kagura/proprietary/vendor/lib/lib_fpc_tac_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_fpc_tac_shared.so \
+    vendor/sony/kagura/proprietary/vendor/lib/libcacao_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcacao_client.so \
+    vendor/sony/kagura/proprietary/vendor/lib/libcacao_pal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcacao_pal.so \
+    vendor/sony/kagura/proprietary/vendor/lib/libcacao_process_ctrl_gateway.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcacao_process_ctrl_gateway.so \
+    vendor/sony/kagura/proprietary/vendor/lib/libcacao_service.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcacao_service.so \
+    vendor/sony/kagura/proprietary/vendor/lib/libcamera_clientsemc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_clientsemc.so \
+    vendor/sony/kagura/proprietary/vendor/lib/libcom_fingerprints_service.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcom_fingerprints_service.so \
+    vendor/sony/kagura/proprietary/vendor/lib/libexcal_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexcal_legacy.so \
+    vendor/sony/kagura/proprietary/vendor/lib/libfpc_oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfpc_oem.so \
+    vendor/sony/kagura/proprietary/vendor/lib/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrueportrait.so \
+    vendor/sony/kagura/proprietary/vendor/lib/vendor.somc.hardware.camera.cacao@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.somc.hardware.camera.cacao@2.0.so \
+    vendor/sony/kagura/proprietary/vendor/lib/vendor.somc.hardware.camera.provider@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.somc.hardware.camera.provider@1.0.so \
+    vendor/sony/kagura/proprietary/vendor/lib64/hw/fingerprint.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.msm8996.so \
     vendor/sony/kagura/proprietary/vendor/lib/libpn547_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpn547_fw.so \
-    vendor/sony/kagura/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
-    vendor/sony/kagura/proprietary/lib64/libcacao_client.so:system/lib64/libcacao_client.so \
-    vendor/sony/kagura/proprietary/lib64/libcacao_pal.so:system/lib64/libcacao_pal.so \
-    vendor/sony/kagura/proprietary/lib64/libcamera_clientsemc.so:system/lib64/libcamera_clientsemc.so \
-    vendor/sony/kagura/proprietary/lib64/libcom_fingerprints_service.so:system/lib64/libcom_fingerprints_service.so \
-    vendor/sony/kagura/proprietary/lib64/libfpc_oem.so:system/lib64/libfpc_oem.so \
-    vendor/sony/kagura/proprietary/lib64/libtrueportrait.so:system/lib64/libtrueportrait.so \
-    vendor/sony/kagura/proprietary/lib64/vendor.somc.hardware.camera.cacao@2.0.so:system/lib64/vendor.somc.hardware.camera.cacao@2.0.so \
-    vendor/sony/kagura/proprietary/lib64/vendor.somc.hardware.camera.provider@1.0.so:system/lib64/vendor.somc.hardware.camera.provider@1.0.so \
+    vendor/sony/kagura/proprietary/vendor/lib64/lib_fpc_tac_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_fpc_tac_shared.so \
+    vendor/sony/kagura/proprietary/vendor/lib64/libcacao_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacao_client.so \
+    vendor/sony/kagura/proprietary/vendor/lib64/libcacao_pal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacao_pal.so \
+    vendor/sony/kagura/proprietary/vendor/lib64/libcamera_clientsemc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_clientsemc.so \
+    vendor/sony/kagura/proprietary/vendor/lib64/libcom_fingerprints_service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom_fingerprints_service.so \
+    vendor/sony/kagura/proprietary/vendor/lib64/libfpc_oem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfpc_oem.so \
+    vendor/sony/kagura/proprietary/vendor/lib64/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrueportrait.so \
+    vendor/sony/kagura/proprietary/vendor/lib64/vendor.somc.hardware.camera.cacao@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.somc.hardware.camera.cacao@2.0.so \
+    vendor/sony/kagura/proprietary/vendor/lib64/vendor.somc.hardware.camera.provider@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.somc.hardware.camera.provider@1.0.so \
     vendor/sony/kagura/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
     vendor/sony/kagura/proprietary/vendor/camera/SEM13BS0/color_ctrl.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM13BS0/color_ctrl.dat \
     vendor/sony/kagura/proprietary/vendor/camera/SEM13BS0/dataflow.dat:$(TARGET_COPY_OUT_VENDOR)/camera/SEM13BS0/dataflow.dat \
