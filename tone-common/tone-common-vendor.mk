@@ -136,7 +136,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/lib/libaptX_encoder.so:system/lib/libaptX_encoder.so \
     vendor/sony/tone-common/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libqmi_cci_system.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_cci_system.so \
-    vendor/sony/tone-common/proprietary/vendor/lib/sensors.finger-pickup.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.finger-pickup.so \
     vendor/sony/tone-common/proprietary/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
     vendor/sony/tone-common/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
     vendor/sony/tone-common/proprietary/lib/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
@@ -166,7 +165,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libqmi_cci_system.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_cci_system.so \
     vendor/sony/tone-common/proprietary/lib64/librcc.so:system/lib64/librcc.so \
-    vendor/sony/tone-common/proprietary/vendor/lib64/sensors.finger-pickup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.finger-pickup.so \
     vendor/sony/tone-common/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
     vendor/sony/tone-common/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
     vendor/sony/tone-common/proprietary/lib64/vendor.qti.gnss@1.0.so:system/lib64/vendor.qti.gnss@1.0.so \

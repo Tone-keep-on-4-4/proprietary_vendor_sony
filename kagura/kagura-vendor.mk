@@ -28,14 +28,5 @@ PRODUCT_COPY_FILES += \
     vendor/sony/kagura/proprietary/vendor/etc/firmware/tzfingerprint.b05:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzfingerprint.b05 \
     vendor/sony/kagura/proprietary/vendor/etc/firmware/tzfingerprint.b06:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzfingerprint.b06 \
     vendor/sony/kagura/proprietary/vendor/etc/firmware/tzfingerprint.mdt:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tzfingerprint.mdt \
-    vendor/sony/kagura/proprietary/vendor/lib/hw/fingerprint.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.msm8996.so \
-    vendor/sony/kagura/proprietary/vendor/lib/lib_fpc_tac_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_fpc_tac_shared.so \
-    vendor/sony/kagura/proprietary/vendor/lib/libcom_fingerprints_service.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcom_fingerprints_service.so \
-    vendor/sony/kagura/proprietary/vendor/lib/libfpc_oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfpc_oem.so \
-    vendor/sony/kagura/proprietary/vendor/lib64/hw/fingerprint.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.msm8996.so \
     vendor/sony/kagura/proprietary/vendor/lib/libpn547_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpn547_fw.so \
-    vendor/sony/kagura/proprietary/vendor/lib64/lib_fpc_tac_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_fpc_tac_shared.so \
-    vendor/sony/kagura/proprietary/vendor/lib64/libcom_fingerprints_service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom_fingerprints_service.so \
-    vendor/sony/kagura/proprietary/vendor/lib64/libfpc_oem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfpc_oem.so \
-    vendor/sony/kagura/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/sony/kagura/proprietary/vendor/etc/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
