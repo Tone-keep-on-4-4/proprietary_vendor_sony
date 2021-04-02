@@ -18,6 +18,10 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/sony/tone-common
 
 PRODUCT_COPY_FILES += \
+    vendor/sony/tone-common/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
+    vendor/sony/tone-common/proprietary/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ATT/ATT_profiles.xml \
+    vendor/sony/tone-common/proprietary/etc/cne/Nexus/ROW/ROW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ROW/ROW_profiles.xml \
+    vendor/sony/tone-common/proprietary/etc/cne/Nexus/VZW/VZW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/VZW/VZW_profiles.xml \
     vendor/sony/tone-common/proprietary/vendor/etc/firmware/cmnlib.b00:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/cmnlib.b00 \
     vendor/sony/tone-common/proprietary/vendor/etc/firmware/cmnlib.b01:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/cmnlib.b01 \
     vendor/sony/tone-common/proprietary/vendor/etc/firmware/cmnlib.b02:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/cmnlib.b02 \
@@ -94,39 +98,43 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/etc/firmware/wlan/bcmdhd/fw_bcmdhd.bin_b1:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/wlan/bcmdhd/fw_bcmdhd.bin_b1 \
     vendor/sony/tone-common/proprietary/vendor/etc/firmware/wlan/bcmdhd/fw_bcmdhd_apsta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/wlan/bcmdhd/fw_bcmdhd_apsta.bin \
     vendor/sony/tone-common/proprietary/vendor/etc/firmware/wlan/bcmdhd/fw_bcmdhd_apsta.bin_b1:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/wlan/bcmdhd/fw_bcmdhd_apsta.bin_b1 \
+    vendor/sony/tone-common/proprietary/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/wfdservice.rc \
     vendor/sony/tone-common/proprietary/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/audiosphere.xml \
-    vendor/sony/tone-common/proprietary/etc/permissions/cneapiclient.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/cneapiclient.xml \
     vendor/sony/tone-common/proprietary/product/etc/permissions/com.qualcomm.qti.imscmservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qualcomm.qti.imscmservice.xml \
-    vendor/sony/tone-common/proprietary/etc/permissions/com.quicinc.cne.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.quicinc.cne.xml \
     vendor/sony/tone-common/proprietary/vendor/etc/permissions/qti-vzw-ims-internal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti-vzw-ims-internal.xml \
-    vendor/sony/tone-common/proprietary/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_libpermissions.xml \
-    vendor/sony/tone-common/proprietary/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_permissions.xml \
+    vendor/sony/tone-common/proprietary/vendor/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti_permissions.xml \
+    vendor/sony/tone-common/proprietary/etc/wfdconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/wfdconfig.xml \
+    vendor/sony/tone-common/proprietary/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/wfdconfigsink.xml \
     vendor/sony/tone-common/proprietary/product/framework/QtiTelephonyServicelibrary.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/QtiTelephonyServicelibrary.jar \
     vendor/sony/tone-common/proprietary/framework/audiosphere.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/audiosphere.jar \
-    vendor/sony/tone-common/proprietary/framework/cneapiclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/cneapiclient.jar \
     vendor/sony/tone-common/proprietary/product/framework/com.qualcomm.qti.imscmservice@1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qualcomm.qti.imscmservice@1.0-java.jar \
-    vendor/sony/tone-common/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.quicinc.cne.api-V1.0-java.jar \
-    vendor/sony/tone-common/proprietary/framework/com.quicinc.cne.api-V1.1-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.quicinc.cne.api-V1.1-java.jar \
-    vendor/sony/tone-common/proprietary/framework/com.quicinc.cne.constants-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.quicinc.cne.constants-V1.0-java.jar \
-    vendor/sony/tone-common/proprietary/framework/com.quicinc.cne.constants-V2.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.quicinc.cne.constants-V2.0-java.jar \
-    vendor/sony/tone-common/proprietary/framework/com.quicinc.cne.constants-V2.1-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.quicinc.cne.constants-V2.1-java.jar \
-    vendor/sony/tone-common/proprietary/framework/com.quicinc.cne.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.quicinc.cne.jar \
-    vendor/sony/tone-common/proprietary/framework/com.quicinc.cne.server-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.quicinc.cne.server-V1.0-java.jar \
-    vendor/sony/tone-common/proprietary/framework/com.quicinc.cne.server-V2.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.quicinc.cne.server-V2.0-java.jar \
-    vendor/sony/tone-common/proprietary/framework/com.quicinc.cne.server-V2.1-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.quicinc.cne.server-V2.1-java.jar \
-    vendor/sony/tone-common/proprietary/framework/com.quicinc.cne.server-V2.2-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.quicinc.cne.server-V2.2-java.jar \
     vendor/sony/tone-common/proprietary/product/framework/qcrilhook.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/qcrilhook.jar \
-    vendor/sony/tone-common/proprietary/framework/vendor.qti.data.factory-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.qti.data.factory-V1.0-java.jar \
-    vendor/sony/tone-common/proprietary/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar \
-    vendor/sony/tone-common/proprietary/framework/vendor.qti.hardware.data.latency-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.qti.hardware.data.latency-V1.0-java.jar \
-    vendor/sony/tone-common/proprietary/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar \
-    vendor/sony/tone-common/proprietary/framework/vendor.qti.latency-V2.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.qti.latency-V2.0-java.jar \
-    vendor/sony/tone-common/proprietary/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.ant@1.0.so \
-    vendor/sony/tone-common/proprietary/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.display.color@1.0.so \
-    vendor/sony/tone-common/proprietary/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.display.postproc@1.0.so \
-    vendor/sony/tone-common/proprietary/lib/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/sony/tone-common/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/sony/tone-common/proprietary/lib/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFileMux.so \
+    vendor/sony/tone-common/proprietary/lib/libOmxMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libOmxMux.so \
+    vendor/sony/tone-common/proprietary/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmosal.so \
+    vendor/sony/tone-common/proprietary/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmparser_lite.so \
+    vendor/sony/tone-common/proprietary/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmrtpdecoder.so \
+    vendor/sony/tone-common/proprietary/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmrtpencoder.so \
+    vendor/sony/tone-common/proprietary/lib/libwfdavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdavenhancements.so \
+    vendor/sony/tone-common/proprietary/lib/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdclient.so \
+    vendor/sony/tone-common/proprietary/lib/libwfdcodecv4l2.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdcodecv4l2.so \
+    vendor/sony/tone-common/proprietary/lib/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdcommonutils.so \
+    vendor/sony/tone-common/proprietary/lib/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdconfigutils.so \
+    vendor/sony/tone-common/proprietary/lib/libwfdmminterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdmminterface.so \
+    vendor/sony/tone-common/proprietary/lib/libwfdmmsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdmmsink.so \
+    vendor/sony/tone-common/proprietary/lib/libwfdmmsrc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdmmsrc.so \
+    vendor/sony/tone-common/proprietary/lib/libwfdnative.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdnative.so \
+    vendor/sony/tone-common/proprietary/lib/libwfdrtsp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdrtsp.so \
+    vendor/sony/tone-common/proprietary/lib/libwfdservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdservice.so \
+    vendor/sony/tone-common/proprietary/lib/libwfdsm.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdsm.so \
+    vendor/sony/tone-common/proprietary/lib/libwfduibcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcinterface.so \
+    vendor/sony/tone-common/proprietary/lib/libwfduibcsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsink.so \
+    vendor/sony/tone-common/proprietary/lib/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsinkinterface.so \
+    vendor/sony/tone-common/proprietary/lib/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsrc.so \
+    vendor/sony/tone-common/proprietary/lib/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsrcinterface.so \
     vendor/sony/tone-common/proprietary/lib/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.tui_comm@1.0.so \
-    vendor/sony/tone-common/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/sony/tone-common/proprietary/product/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/sony/tone-common/proprietary/product/lib64/lib-imscamera.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imscamera.so \
     vendor/sony/tone-common/proprietary/product/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvideocodec.so \
@@ -134,16 +142,16 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/product/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvtextutils.so \
     vendor/sony/tone-common/proprietary/product/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvtutils.so \
     vendor/sony/tone-common/proprietary/product/lib64/libdiag_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdiag_system.so \
+    vendor/sony/tone-common/proprietary/lib64/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmosal.so \
     vendor/sony/tone-common/proprietary/product/lib64/librcc.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/librcc.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libtpm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtpm.so \
-    vendor/sony/tone-common/proprietary/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.display.color@1.0.so \
-    vendor/sony/tone-common/proprietary/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.display.postproc@1.0.so \
+    vendor/sony/tone-common/proprietary/lib64/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdclient.so \
+    vendor/sony/tone-common/proprietary/lib64/libwfdnative.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdnative.so \
     vendor/sony/tone-common/proprietary/lib64/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.gnss@1.0.so \
     vendor/sony/tone-common/proprietary/lib64/vendor.qti.gnss@1.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.gnss@1.1.so \
     vendor/sony/tone-common/proprietary/lib64/vendor.qti.gnss@1.2.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.gnss@1.2.so \
     vendor/sony/tone-common/proprietary/lib64/vendor.qti.gnss@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.gnss@2.0.so \
     vendor/sony/tone-common/proprietary/lib64/vendor.qti.gnss@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.gnss@2.1.so \
-    vendor/sony/tone-common/proprietary/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/sony/tone-common/proprietary/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/sony/tone-common/proprietary/product/lib64/vendor.qti.imsrtpservice@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@1.0.so \
     vendor/sony/tone-common/proprietary/product/bin/dpmd:$(TARGET_COPY_OUT_PRODUCT)/bin/dpmd \
@@ -157,7 +165,16 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/product/framework/com.qti.dpmframework.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qti.dpmframework.jar \
     vendor/sony/tone-common/proprietary/product/framework/dpmapi.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/dpmapi.jar \
     vendor/sony/tone-common/proprietary/product/framework/qti-telephony-common.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/qti-telephony-common.jar \
+    vendor/sony/tone-common/proprietary/product/framework/vendor.qti.hardware.alarm-V1.0-java.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
+    vendor/sony/tone-common/proprietary/product/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.color@1.0.so \
+    vendor/sony/tone-common/proprietary/product/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.display.postproc@1.0.so \
+    vendor/sony/tone-common/proprietary/product/lib/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/sony/tone-common/proprietary/product/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/sony/tone-common/proprietary/product/lib64/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.quicinc.cne.api@1.0.so \
+    vendor/sony/tone-common/proprietary/product/lib64/com.quicinc.cne.api@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.quicinc.cne.api@1.1.so \
+    vendor/sony/tone-common/proprietary/product/lib64/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.quicinc.cne.constants@1.0.so \
+    vendor/sony/tone-common/proprietary/product/lib64/com.quicinc.cne.constants@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.quicinc.cne.constants@2.0.so \
+    vendor/sony/tone-common/proprietary/product/lib64/com.quicinc.cne.constants@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.quicinc.cne.constants@2.1.so \
     vendor/sony/tone-common/proprietary/product/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptXHD_encoder.so \
     vendor/sony/tone-common/proprietary/product/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so \
     vendor/sony/tone-common/proprietary/product/lib64/libdpmctmgr.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdpmctmgr.so \
@@ -166,6 +183,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/product/lib64/libdpmtcm.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdpmtcm.so \
     vendor/sony/tone-common/proprietary/product/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimscamera_jni.so \
     vendor/sony/tone-common/proprietary/product/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimsmedia_jni.so \
+    vendor/sony/tone-common/proprietary/product/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.0.so \
+    vendor/sony/tone-common/proprietary/product/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.postproc@1.0.so \
+    vendor/sony/tone-common/proprietary/product/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/sony/tone-common/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/sony/tone-common/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
     vendor/sony/tone-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
@@ -174,10 +194,11 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
     vendor/sony/tone-common/proprietary/vendor/bin/energy-awareness:$(TARGET_COPY_OUT_VENDOR)/bin/energy-awareness \
     vendor/sony/tone-common/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
-    vendor/sony/tone-common/proprietary/vendor/bin/hw/android.hardware.drm@1.1-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.1-service.widevine \
+    vendor/sony/tone-common/proprietary/vendor/bin/hw/android.hardware.drm@1.2-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.2-service.widevine \
     vendor/sony/tone-common/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/sony/tone-common/proprietary/vendor/bin/hw/vendor.qti.gnss@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.gnss@2.0-service \
-    vendor/sony/tone-common/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@1.0-service \
+    vendor/sony/tone-common/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
+    vendor/sony/tone-common/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@2.0-service \
     vendor/sony/tone-common/proprietary/vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti \
     vendor/sony/tone-common/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor/sony/tone-common/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
@@ -189,10 +210,14 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
     vendor/sony/tone-common/proprietary/vendor/bin/mlog_qmi_service:$(TARGET_COPY_OUT_VENDOR)/bin/mlog_qmi_service \
     vendor/sony/tone-common/proprietary/vendor/bin/mm-pp-dpps:$(TARGET_COPY_OUT_VENDOR)/bin/mm-pp-dpps \
+    vendor/sony/tone-common/proprietary/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance \
     vendor/sony/tone-common/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
     vendor/sony/tone-common/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
+    vendor/sony/tone-common/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
+    vendor/sony/tone-common/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
     vendor/sony/tone-common/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
     vendor/sony/tone-common/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
+    vendor/sony/tone-common/proprietary/vendor/bin/power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/power_off_alarm \
     vendor/sony/tone-common/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
     vendor/sony/tone-common/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
     vendor/sony/tone-common/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
@@ -205,6 +230,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/sony/tone-common/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/sony/tone-common/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
+    vendor/sony/tone-common/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
     vendor/sony/tone-common/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/sony/tone-common/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
     vendor/sony/tone-common/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
@@ -273,7 +299,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile6.xml \
     vendor/sony/tone-common/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/sony/tone-common/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
-    vendor/sony/tone-common/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.widevine.rc \
+    vendor/sony/tone-common/proprietary/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.2-service.widevine.rc \
+    vendor/sony/tone-common/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
+    vendor/sony/tone-common/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/sony/tone-common/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/sony/tone-common/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
     vendor/sony/tone-common/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
@@ -281,11 +309,13 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/etc/init/imsdatadaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdatadaemon.rc \
     vendor/sony/tone-common/proprietary/vendor/etc/init/imsqmidaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsqmidaemon.rc \
     vendor/sony/tone-common/proprietary/vendor/etc/init/imsrcsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsrcsd.rc \
+    vendor/sony/tone-common/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/sony/tone-common/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/sony/tone-common/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/sony/tone-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/sony/tone-common/proprietary/vendor/etc/init/vendor.qti.gnss@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.gnss@2.0-service.rc \
-    vendor/sony/tone-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@1.0-service.rc \
+    vendor/sony/tone-common/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
+    vendor/sony/tone-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.0-service.rc \
     vendor/sony/tone-common/proprietary/vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc \
     vendor/sony/tone-common/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/sony/tone-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
@@ -335,6 +365,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/firmware/a530v3_seq.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v3_seq.fw2 \
     vendor/sony/tone-common/proprietary/vendor/firmware/cpp_firmware_v1_10_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_10_0.fw \
     vendor/sony/tone-common/proprietary/vendor/framework/qti-vzw-ims-internal.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qti-vzw-ims-internal.jar \
+    vendor/sony/tone-common/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
     vendor/sony/tone-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/eglSubDriverAndroid.so \
     vendor/sony/tone-common/proprietary/vendor/lib/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libEGL_adreno.so \
     vendor/sony/tone-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv1_CM_adreno.so \
@@ -357,10 +388,11 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/lib/libOmxAmrwbplusDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAmrwbplusDec.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libOmxApeDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxApeDec.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libOmxApeDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxApeDecSw.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/libOmxDsdDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxDsdDec.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libOmxEvrcDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxEvrcDec.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/libOmxG711Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxG711Dec.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxQcelp13Dec.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libOmxVideoDSMode.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVideoDSMode.so \
-    vendor/sony/tone-common/proprietary/vendor/lib/libOmxVpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVpp.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQSEEComAPI.so \
@@ -457,7 +489,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libfastrpc_utf_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastrpc_utf_stub.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libflash_pmic.so:$(TARGET_COPY_OUT_VENDOR)/lib/libflash_pmic.so \
-    vendor/sony/tone-common/proprietary/vendor/lib/libgpustats.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpustats.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdr_tm.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
@@ -564,10 +595,13 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/lib/libmmcamera_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tuning.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tuning_lookup.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libmmjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal_proprietary.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libmmqjpeg_codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpeg_codec.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libmmqjpegdma.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpegdma.so \
     vendor/sony/tone-common/proprietary/vendor/lib/liboptizoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboptizoom.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfconfig.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperipheral_client.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperipheral_client.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
@@ -601,12 +635,15 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libsys-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsys-utils.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libta.so:$(TARGET_COPY_OUT_VENDOR)/lib/libta.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtime_genoff.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libubifocus.so \
-    vendor/sony/tone-common/proprietary/vendor/lib/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphvx.so \
-    vendor/sony/tone-common/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
     vendor/sony/tone-common/proprietary/vendor/lib/libvqzip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvqzip.so \
-    vendor/sony/tone-common/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/libwfdhaldsmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhaldsmanager.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpcp.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/libwfdmmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmservice.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmodulehdcpsession.so \
     vendor/sony/tone-common/proprietary/vendor/lib/rfsa/adsp/libadsp_fd_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libadsp_fd_skel.so \
     vendor/sony/tone-common/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libadsp_hvx_add_constant.so \
     vendor/sony/tone-common/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libadsp_hvx_skel.so \
@@ -636,20 +673,12 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/lib/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.2.so \
     vendor/sony/tone-common/proprietary/vendor/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.postproc@1.0.so \
     vendor/sony/tone-common/proprietary/vendor/lib/vendor.qti.hardware.perf@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@1.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@2.0.so \
     vendor/sony/tone-common/proprietary/vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/sony/tone-common/proprietary/vendor/lib/vendor.qti.hardware.tui_comm@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.tui_comm@1.0_vendor.so \
     vendor/sony/tone-common/proprietary/vendor/lib/vendor.somc.hardware.radio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.somc.hardware.radio@1.0.so \
-    vendor/sony/tone-common/proprietary/vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.ant@1.0_vendor.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so \
-    vendor/sony/tone-common/proprietary/vendor/lib64/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.quicinc.cne.api@1.0.so \
-    vendor/sony/tone-common/proprietary/vendor/lib64/com.quicinc.cne.api@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.quicinc.cne.api@1.1.so \
-    vendor/sony/tone-common/proprietary/vendor/lib64/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.quicinc.cne.constants@1.0.so \
-    vendor/sony/tone-common/proprietary/vendor/lib64/com.quicinc.cne.constants@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.quicinc.cne.constants@2.0.so \
-    vendor/sony/tone-common/proprietary/vendor/lib64/com.quicinc.cne.constants@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.quicinc.cne.constants@2.1.so \
-    vendor/sony/tone-common/proprietary/vendor/lib64/com.quicinc.cne.server@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.quicinc.cne.server@2.0.so \
-    vendor/sony/tone-common/proprietary/vendor/lib64/com.quicinc.cne.server@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.quicinc.cne.server@2.1.so \
-    vendor/sony/tone-common/proprietary/vendor/lib64/com.quicinc.cne.server@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.quicinc.cne.server@2.2.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/eglSubDriverAndroid.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libEGL_adreno.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv1_CM_adreno.so \
@@ -661,6 +690,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/lib64/hw/keystore.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/keystore.msm8996.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/hw/sound_trigger.primary.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.msm8996.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/hw/vendor.qti.gnss@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@2.0-impl.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/hw/vulkan.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.msm8996.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/lib-dplmedia.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-dplmedia.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/lib-imsSDP.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsSDP.so \
@@ -695,6 +725,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/lib64/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioalsa.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbccQTI.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30_bltlib.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacertclient.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libcameralight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameralight.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
@@ -716,7 +747,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/lib64/libflp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libflp.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgdtap.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libgeofence.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgeofence.so \
-    vendor/sony/tone-common/proprietary/vendor/lib64/libgpustats.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpustats.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
@@ -740,7 +770,10 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/lib64/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc2.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfconfig.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfgluelayer.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcci_legacy.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcmaputils.so \
@@ -792,6 +825,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/lib64/libulp2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libulp2.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwqe.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtadapter.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtwifi_ulp_adaptor.so \
@@ -805,15 +839,24 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.1.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.2.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
-    vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.data.factory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@1.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.0.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.gnss@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.1.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.gnss@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.2.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@2.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.alarm@1.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.hardware.cacert@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cacert@1.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.hardware.data.connection@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.connection@1.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.hardware.data.connection@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.connection@1.1.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.iwlan@1.0.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.qmi@1.0.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.hardware.perf@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.perf@1.0.so \
+    vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.perf@2.0.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.am@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.am@1.0_vendor.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so \
@@ -826,7 +869,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.hardware.tui_comm@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.tui_comm@1.0_vendor.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
-    vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@1.0_vendor.so \
     vendor/sony/tone-common/proprietary/vendor/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.0.so \
@@ -834,14 +876,19 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db
 
 PRODUCT_PACKAGES += \
+    libgpustats \
     libmiscta \
     libsdm-disp-vndapis \
     libthermalclient \
-    CNEService \
+    WfdService \
+    CneApp \
+    IWlanService \
     TimeService \
     QtiTelephonyService \
     uceShimService \
+    PowerOffAlarm \
     qcrilmsgtunnel \
     dpmserviceapp \
     ims \
+    WfdCommon \
     ReferenceFeature
