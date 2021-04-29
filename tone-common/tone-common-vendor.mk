@@ -204,7 +204,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tone-common/proprietary/vendor/bin/slim_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/slim_daemon \
     vendor/sony/tone-common/proprietary/vendor/bin/ta_qmi_service:$(TARGET_COPY_OUT_VENDOR)/bin/ta_qmi_service \
     vendor/sony/tone-common/proprietary/vendor/bin/tad_static:$(TARGET_COPY_OUT_VENDOR)/bin/tad_static \
-    vendor/sony/tone-common/proprietary/vendor/bin/taimport:$(TARGET_COPY_OUT_VENDOR)/bin/taimport \
+    vendor/sony/tone-common/proprietary/vendor/bin/taimport_vendor:$(TARGET_COPY_OUT_VENDOR)/bin/taimport_vendor \
     vendor/sony/tone-common/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/sony/tone-common/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/sony/tone-common/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
